@@ -1,0 +1,15 @@
+{
+    "config": {
+        "network-interface":{
+            "help": "options are ETHERNET, ETHERNET_WIZNET",
+            "value": "ETHERNET_WIZNET"
+        }
+    },
+    "target_overrides": {
+        "*": {
+            "platform.stdio-baud-rate": 115200,
+            "platform.stdio-convert-newlines": true,
+            "mbed-trace.enable": 0
+        }
+    }
+}
